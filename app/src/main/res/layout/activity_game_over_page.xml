@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pokemon_background"
+    tools:context=".GameOverPage">
+
+    <TextView
+        android:id="@+id/gameOverPage_TXV_gameOver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Game Over"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:textSize="65sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="80dp"/>
+
+    <LinearLayout
+        android:id="@+id/gameOverPage_LL_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/gameOverPage_TXV_gameOver"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="80dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time: "
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="40dp"/>
+
+        <TextView
+            android:id="@+id/gameOverPage_TXV_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00:00 "
+            android:textColor="#FFFFFF"
+            android:background="@drawable/text_bg"
+            android:gravity="center_horizontal"
+            android:textSize="30dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/gameOverPage_LL_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/gameOverPage_LL_time"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score: "
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0000"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/text_bg"
+            android:gravity="center_horizontal"
+            android:textSize="30dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/gameOverPage_BTN_playAgain"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:background="@drawable/btn_bg_green"
+        android:text="PLAY AGAIN"
+        android:textSize="35sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_below="@+id/gameOverPage_LL_score"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="30dp"
+        />
+
+    <Button
+        android:id="@+id/gameOverPage_BTN_menu"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="MENU"
+        android:background="@drawable/btn_bg_green"
+        android:textSize="35sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_below="@+id/gameOverPage_BTN_playAgain"
+        android:layout_centerInParent="true"
+        />
+
+
+</RelativeLayout>
