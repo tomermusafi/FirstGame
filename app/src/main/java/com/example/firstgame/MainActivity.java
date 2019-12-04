@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
         }
     };
-
+    //to check if resume
     static int resumeCount = 0;
 
     // number of cols
@@ -61,13 +61,18 @@ public class MainActivity extends AppCompatActivity {
     Pika pika;
 
     //intent time
-    Time time = new Time(0, 0, 0);
+    Time time = new Time(0, 0);
 
+    // intent score
+    Score score = new Score(0);
 
+    //buttons
     Button main_BTN_left, main_BTN_right;
 
-    static TextView main_TXV_time;
+    //textViews
+    static TextView main_TXV_time,main_TXV_score;
 
+    //sound object
     Sound sound;
 
 
@@ -95,8 +100,11 @@ public class MainActivity extends AppCompatActivity {
         // Start the timer
         time.setSecond(0);
         time.setMinute(0);
-        time.setHundredthSecond(0);
         time.countTime();
+
+        //start count score
+        score.setScore(0);
+        score.countScore();
 
         // intent the pos values
         pos = 10;
@@ -105,16 +113,19 @@ public class MainActivity extends AppCompatActivity {
         pos_col2 = 0;
 
 
+        //life array
         arrImgLife = new ImageView[] {
                 findViewById(R.id.main_IMG_live0)
                 ,findViewById(R.id.main_IMG_live1)
                 ,findViewById(R.id.main_IMG_live2)};
 
+        //player array
         arrImgActor = new ImageView[] {
                 findViewById(R.id.main_IMV_0)
                 , findViewById(R.id.main_IMV_1)
                 , findViewById(R.id.main_IMV_2) };
 
+        //obstacle matrix
         arrImgObstacle = new ImageView[][]{
                 {findViewById(R.id.main_IMV_00),findViewById(R.id.main_IMV_01),findViewById(R.id.main_IMV_02)},
                 {findViewById(R.id.main_IMV_10),findViewById(R.id.main_IMV_11),findViewById(R.id.main_IMV_12)},
@@ -132,6 +143,8 @@ public class MainActivity extends AppCompatActivity {
         main_BTN_left = findViewById(R.id.main_BTN_left);
         main_BTN_right = findViewById(R.id.main_BTN_right);
         main_TXV_time = findViewById(R.id.main_TXV_time);
+        main_TXV_score = findViewById(R.id.main_TXV_score);
+
         main_BTN_left.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -148,6 +161,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //start sound's game
         sound.start_game_sound();
 
         // obstacle falling
@@ -184,6 +198,7 @@ public class MainActivity extends AppCompatActivity {
         if(Pika.life == 0 ){
             handler.removeCallbacks(myRun);
             time.stopTime();
+            score.stopScore();
             Intent intent = new Intent(this, GameOverPage.class);
             startActivity(intent);
             sound.stop_game_sound();
@@ -219,6 +234,7 @@ public class MainActivity extends AppCompatActivity {
         sound.pause_game_sound();
         handler.removeCallbacks(myRun);
         time.stopTime();
+        score.stopScore();
     }
 
     @Override
@@ -227,6 +243,7 @@ public class MainActivity extends AppCompatActivity {
         Log.d("ggg", "on back pressed");
         handler.removeCallbacks(myRun);
         time.stopTime();
+        score.stopScore();
         sound.stop_game_sound();
         finish();
 
@@ -236,10 +253,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         Log.d("ggg", "on resume");
-        time.countTime();
         sound.resume_game_sound();
         if (resumeCount > 0){
             handler.postDelayed(myRun, SLEEP_TIME);
+            Time.handler.postDelayed(Time.myRun, 1000);
+            Score.handler.postDelayed(Score.myRun, 1000);
+
         }
         else {
             resumeCount++;

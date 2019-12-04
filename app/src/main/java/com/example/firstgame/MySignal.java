@@ -8,6 +8,7 @@ import android.os.Vibrator;
 public class MySignal {
 
 
+    //vibration for player injured
     public static void vibrate(Context context, int duration) {
         Vibrator v = (Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {

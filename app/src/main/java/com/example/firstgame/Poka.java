@@ -8,8 +8,8 @@ public class Poka {
     int posCol;
     int col;
 
-    public Poka(int i) {
-        col = i;
+    public Poka(int col) {
+        this.col = col;
         if(col == 0){
             posCol = MainActivity.pos_col0;
         }
@@ -22,8 +22,8 @@ public class Poka {
     }
 
 
+    //move obstacle from up to down the screen
     public void fallImg(){
-
 
         if(posCol == 10){
             posCol = 0;

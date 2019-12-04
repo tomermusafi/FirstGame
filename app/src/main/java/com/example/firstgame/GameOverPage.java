@@ -12,8 +12,11 @@ import android.widget.TextView;
 
 public class GameOverPage extends AppCompatActivity {
 
+    //buttons
     Button gameOverPage_BTN_playAgain, gameOverPage_BTN_menu;
-    TextView gameOverPage_TXV_time;
+
+    //textViews
+    TextView gameOverPage_TXV_time, gameOverPage_TXV_score;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +31,7 @@ public class GameOverPage extends AppCompatActivity {
         gameOverPage_BTN_playAgain = findViewById(R.id.gameOverPage_BTN_playAgain);
         gameOverPage_BTN_menu = findViewById(R.id.gameOverPage_BTN_menu);
         gameOverPage_TXV_time = findViewById(R.id.gameOverPage_TXV_time);
+        gameOverPage_TXV_score = findViewById(R.id.gameOverPage_TXV_score);
 
         gameOverPage_BTN_playAgain.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,10 +48,12 @@ public class GameOverPage extends AppCompatActivity {
         });
 
         gameOverPage_TXV_time.setText(MainActivity.main_TXV_time.getText().toString());
+        gameOverPage_TXV_score.setText(MainActivity.main_TXV_score.getText().toString());
 
 
     }
 
+    //go to the main page(the game)
     private void goToGamePage(){
         Intent intent = new Intent(this, MainActivity.class );
         startActivity(intent);
@@ -55,6 +61,7 @@ public class GameOverPage extends AppCompatActivity {
 
     }
 
+    //go to the menu page(the first page)
     private void goToMenuPage(){
         finish();
     }

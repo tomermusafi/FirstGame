@@ -11,14 +11,17 @@ import android.widget.Button;
 
 public class OpenPage extends AppCompatActivity {
 
+    //buttons
     Button open_BTN_play, open_BTN_records, open_BTN_quit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         setContentView(R.layout.activity_open_page);
 
         open_BTN_play = findViewById(R.id.open_BTN_play);
@@ -40,6 +43,7 @@ public class OpenPage extends AppCompatActivity {
         });
     }
 
+    //go to the main page(the game)
     public void startGame(){
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);

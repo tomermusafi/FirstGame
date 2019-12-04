@@ -4,19 +4,18 @@ import android.os.Handler;
 
 public class Time {
 
-    int hundredthSecond = 0 ;
-    int second = 0;
-    int minute = 0;
-    Runnable myRun;
-    Handler handler;
+    int second;
+    int minute;
+    static Runnable myRun;
+    static Handler handler;
 
-    public Time(int hundredthSecond, int second, int minute) {
-        this.hundredthSecond = hundredthSecond;
+    public Time(int second, int minute) {
         this.second = second;
         this.minute = minute;
         handler = new Handler();
     }
 
+    //start run time
     public void countTime(){
 
 
@@ -28,30 +27,26 @@ public class Time {
 
                 }
             };
-        handler.postDelayed(myRun, 10);
+        handler.postDelayed(myRun, 1000);
     }
 
+    //time calculation
     private void count(){
-        hundredthSecond ++;
-        if(hundredthSecond == 100){
-            hundredthSecond = 0;
-            second++;
-        }
+        second++;
+
         if(second == 60){
             second = 0;
             minute++;
         }
-        MainActivity.main_TXV_time.setText("" + minute + ":" + second + ":" + hundredthSecond);
+        MainActivity.main_TXV_time.setText("" + minute + ":" + second);
+
     }
 
+    //stop time
     public void stopTime(){
         handler.removeCallbacks(myRun);
     }
 
-    public Time setHundredthSecond(int hundredthSecond) {
-        this.hundredthSecond = hundredthSecond;
-        return this;
-    }
 
     public Time setSecond(int second) {
         this.second = second;

@@ -39,6 +39,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/main_LL_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -52,17 +53,45 @@
             android:text="time: "
             android:textSize="27sp"
             android:textStyle="bold"
-            android:textColor="#FFFFFF"/>
+            android:textColor="@color/myTextColor"/>
         <TextView
             android:id="@+id/main_TXV_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="00:00:00"
+            android:text="00:00"
             android:textSize="27sp"
             android:textStyle="bold"
-            android:textColor="#FFFFFF"/>
+            android:textColor="@color/myTextColor"/>
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/main_LL_time"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="score: "
+            android:textSize="27sp"
+            android:textStyle="bold"
+            android:textColor="@color/myTextColor"/>
+        <TextView
+            android:id="@+id/main_TXV_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="000"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            android:textColor="@color/myTextColor"/>
+
+    </LinearLayout>
+
+
+
 
 
 
@@ -379,6 +408,5 @@
         android:layout_margin="20dp"
         android:background="@drawable/btn_right"/>
 
-
-
 </RelativeLayout>
+

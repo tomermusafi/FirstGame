@@ -21,6 +21,7 @@ public class Pika {
 
     }
 
+    //move the player right
     public void moveRight(){
         switch (pos){
             case 0:{
@@ -43,6 +44,7 @@ public class Pika {
 
     }
 
+    //move the player left
     public void moveLeft(){
 
         switch (pos){
@@ -66,6 +68,7 @@ public class Pika {
 
     }
 
+    //check if player injured by obstacle
     public static void checkLife(){
         if((MainActivity.arrImgActor[0].getVisibility() == View.VISIBLE)
         && (MainActivity.arrImgObstacle[6][0].getVisibility() == View.VISIBLE)
@@ -90,6 +93,7 @@ public class Pika {
         }
     }
 
+    //take down life
     private static void bybyLife(){
         switch (life){
             case 3: {
@@ -106,8 +110,10 @@ public class Pika {
             break;
         }
     }
+
+    //show signal when player is injured
     private static void whenInjurd(int pos){
-        Toast.makeText(context, "Aaawuch", Toast.LENGTH_SHORT).show();
+        Toast.makeText(context, "Ohhh", Toast.LENGTH_SHORT).show();
         signal.vibrate(context, 500);
         anim.animateItCode(MainActivity.arrImgLife[pos]);
         sound.pikaaaaSound();

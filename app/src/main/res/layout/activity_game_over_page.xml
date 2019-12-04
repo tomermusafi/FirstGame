@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:text="Game Over"
         android:textStyle="bold"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/myTextColor"
         android:layout_centerInParent="true"
         android:layout_alignParentTop="true"
         android:textSize="65sp"
@@ -34,7 +34,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Time: "
-            android:textColor="#FFFFFF"
+            android:textColor="@color/myTextColor"
             android:textStyle="bold"
             android:textSize="40dp"/>
 
@@ -43,7 +43,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="00:00:00 "
-            android:textColor="#FFFFFF"
+            android:textColor="@color/myTextColor"
             android:background="@drawable/text_bg"
             android:gravity="center_horizontal"
             android:textSize="30dp"/>
@@ -63,15 +63,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Score: "
-            android:textColor="#FFFFFF"
+            android:textColor="@color/myTextColor"
             android:textStyle="bold"
             android:textSize="40dp"/>
 
         <TextView
+            android:id="@+id/gameOverPage_TXV_score"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0000"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/myTextColor"
             android:background="@drawable/text_bg"
             android:gravity="center_horizontal"
             android:textSize="30dp"/>
@@ -84,7 +85,7 @@
         android:background="@drawable/btn_bg_green"
         android:text="PLAY AGAIN"
         android:textSize="35sp"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/myTextColor"
         android:textStyle="bold"
         android:layout_below="@+id/gameOverPage_LL_score"
         android:layout_centerInParent="true"
@@ -99,7 +100,7 @@
         android:text="MENU"
         android:background="@drawable/btn_bg_green"
         android:textSize="35sp"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/myTextColor"
         android:textStyle="bold"
         android:layout_below="@+id/gameOverPage_BTN_playAgain"
         android:layout_centerInParent="true"
