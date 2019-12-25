@@ -42,8 +42,13 @@
 
         <activity
             android:name=".MapActivity"
-            android:label="@string/title_activity_map"></activity>
-        <activity android:name=".ScorePage" />
+            android:label="@string/title_activity_map"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".ScorePage"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".GameOverPage"
             android:configChanges="orientation"
