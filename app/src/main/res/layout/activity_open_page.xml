@@ -7,15 +7,81 @@
     android:background="@drawable/first_bg"
     tools:context=".OpenPage">
 
+    <Button
+        android:id="@+id/open_BTN_speed"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:text="fast"
+        android:textStyle="bold"
+        android:background="@drawable/custom_button"
+        android:textColor="@color/myTextColor"
+        android:textSize="12sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/open_BTN_sensor"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:text="sensor ON"
+        android:textStyle="bold"
+        android:background="@drawable/custom_button"
+        android:textColor="@color/myTextColor"
+        android:textSize="12sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_centerInParent="true"/>
 
 
     <LinearLayout
+        android:id="@+id/openPage_LL_lanes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@+id/open_LL_btn"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="65dp">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Number Of Lanes"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_txv"
+            android:textColor="@color/myTextColor"/>
+
+        <Button
+            android:id="@+id/open_BTN_numOfLane"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:text="3"
+            android:textColor="@color/myTextColor"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:background="@drawable/custom_button"
+            />
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/open_LL_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_centerInParent="true"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="64dp">
+
 
         <Button
             android:id="@+id/open_BTN_play"

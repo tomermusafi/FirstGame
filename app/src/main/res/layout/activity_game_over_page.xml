@@ -33,7 +33,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Time: "
+            android:text="Meters: "
             android:textColor="@color/myTextColor"
             android:textStyle="bold"
             android:textSize="40dp"/>
@@ -42,7 +42,7 @@
             android:id="@+id/gameOverPage_TXV_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="00:00:00 "
+            android:text="0000"
             android:textColor="@color/myTextColor"
             android:background="@drawable/text_bg"
             android:gravity="center_horizontal"
@@ -77,6 +77,34 @@
             android:gravity="center_horizontal"
             android:textSize="30dp"/>
     </LinearLayout>
+    <LinearLayout
+        android:id="@+id/gameOverPage_LL_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/gameOverPage_LL_score"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            android:textColor="@color/myTextColor"
+            android:textStyle="bold"
+            android:textSize="40dp"/>
+
+        <EditText
+            android:id="@+id/gameOverPage_EDT_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/myTextColor"
+            android:background="@drawable/text_bg"
+            android:gravity="center_horizontal"
+            android:textSize="30dp"/>
+    </LinearLayout>
 
     <Button
         android:id="@+id/gameOverPage_BTN_playAgain"
@@ -87,7 +115,7 @@
         android:textSize="35sp"
         android:textColor="@color/myTextColor"
         android:textStyle="bold"
-        android:layout_below="@+id/gameOverPage_LL_score"
+        android:layout_below="@+id/gameOverPage_LL_name"
         android:layout_centerInParent="true"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="30dp"

@@ -50,7 +50,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="time: "
+            android:text="Distance: "
             android:textSize="27sp"
             android:textStyle="bold"
             android:textColor="@color/myTextColor"/>
@@ -186,7 +186,62 @@
                 android:layout_marginBottom="5dp"
                 android:visibility="invisible"/>
 
+            <ImageView
+                android:id="@+id/main_IMV_90"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/main_IMV_100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/main_IMV_110"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/main_IMV_120"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/main_IMV_130"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/main_IMV_140"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+
         </LinearLayout>
+
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -252,14 +307,16 @@
                 android:src="@drawable/pokeball"
                 android:layout_marginBottom="5dp"
                 android:visibility="invisible"/>
+
             <ImageView
                 android:id="@+id/main_IMV_71"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
                 android:layout_weight="1"
                 android:src="@drawable/pokeball"
-                android:layout_marginBottom="5dp"
-                android:visibility="invisible"/>
+                android:visibility="invisible" />
+
             <ImageView
                 android:id="@+id/main_IMV_81"
                 android:layout_width="wrap_content"
@@ -269,7 +326,62 @@
                 android:layout_marginBottom="5dp"
                 android:visibility="invisible"/>
 
+            <ImageView
+                android:id="@+id/main_IMV_91"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/main_IMV_101"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/main_IMV_111"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/main_IMV_121"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/main_IMV_131"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/main_IMV_141"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+
         </LinearLayout>
+
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -335,14 +447,16 @@
                 android:src="@drawable/pokeball"
                 android:layout_marginBottom="5dp"
                 android:visibility="invisible"/>
+
             <ImageView
                 android:id="@+id/main_IMV_72"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
                 android:layout_weight="1"
                 android:src="@drawable/pokeball"
-                android:layout_marginBottom="5dp"
-                android:visibility="invisible"/>
+                android:visibility="invisible" />
+
             <ImageView
                 android:id="@+id/main_IMV_82"
                 android:layout_width="wrap_content"
@@ -352,61 +466,436 @@
                 android:layout_marginBottom="5dp"
                 android:visibility="invisible"/>
 
+            <ImageView
+                android:id="@+id/main_IMV_92"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/main_IMV_102"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/main_IMV_112"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/main_IMV_122"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/main_IMV_132"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/main_IMV_142"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+
         </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/main_IMV_03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:visibility="invisible"/>
+            <ImageView
+                android:id="@+id/main_IMV_13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+            <ImageView
+                android:id="@+id/main_IMV_23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+            <ImageView
+                android:id="@+id/main_IMV_33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+            <ImageView
+                android:id="@+id/main_IMV_43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+            <ImageView
+                android:id="@+id/main_IMV_53"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/main_IMV_63"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/main_IMV_73"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/main_IMV_83"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/main_IMV_93"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/main_IMV_103"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/main_IMV_113"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/main_IMV_123"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/main_IMV_133"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/main_IMV_143"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/main_IMV_04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:visibility="invisible"/>
+            <ImageView
+                android:id="@+id/main_IMV_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+            <ImageView
+                android:id="@+id/main_IMV_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+            <ImageView
+                android:id="@+id/main_IMV_34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+            <ImageView
+                android:id="@+id/main_IMV_44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+            <ImageView
+                android:id="@+id/main_IMV_54"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/main_IMV_64"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/main_IMV_74"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/main_IMV_84"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/main_IMV_94"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/main_IMV_104"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/main_IMV_114"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/main_IMV_124"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/main_IMV_134"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/main_IMV_144"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+
 
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/main_IMV_0"
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:src="@drawable/pikachu"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="140dp"
-        android:layout_marginLeft="30dp"
-        android:layout_alignParentLeft="true"
-        android:visibility="invisible"/>
 
-    <ImageView
-        android:id="@+id/main_IMV_1"
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:src="@drawable/pikachu"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="140dp"
-        android:layout_centerInParent="true"
-        android:visibility="visible"/>
-    <ImageView
-        android:id="@+id/main_IMV_2"
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:src="@drawable/pikachu"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="140dp"
-        android:layout_marginRight="30dp"
-        android:layout_alignParentRight="true"
-        android:visibility="invisible"
-        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginBottom="100dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/main_IMV_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/pikachu"
+            android:visibility="invisible"
+            />
+        <ImageView
+            android:id="@+id/main_IMV_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/pikachu"
+            android:visibility="invisible"
+            />
+        <ImageView
+            android:id="@+id/main_IMV_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/pikachu"
+            android:visibility="invisible"
+            />
+        <ImageView
+            android:id="@+id/main_IMV_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/pikachu"
+            android:visibility="invisible"
+            />
+        <ImageView
+            android:id="@+id/main_IMV_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/pikachu"
+            android:visibility="invisible"
+            />
+
+
+    </LinearLayout>
     
 
-    <Button
-        android:id="@+id/main_BTN_left"
-        android:layout_width="85dp"
-        android:layout_height="85dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_margin="20dp"
-        android:background="@drawable/btn_left"
-        />
+<!--    <Button-->
+<!--        android:id="@+id/main_BTN_left"-->
+<!--        android:layout_width="85dp"-->
+<!--        android:layout_height="85dp"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_margin="20dp"-->
+<!--        android:background="@drawable/btn_left"-->
+<!--        />-->
 
-    <Button
-        android:id="@+id/main_BTN_right"
-        android:layout_width="85dp"
-        android:layout_height="85dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_margin="20dp"
-        android:background="@drawable/btn_right"/>
+<!--    <Button-->
+<!--        android:id="@+id/main_BTN_right"-->
+<!--        android:layout_width="85dp"-->
+<!--        android:layout_height="85dp"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_margin="20dp"-->
+<!--        android:background="@drawable/btn_right"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/main_LL_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" />
+        <LinearLayout
+            android:id="@+id/main_LL_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" />
+
+    </LinearLayout>
+
 
 </RelativeLayout>
 

@@ -8,16 +8,22 @@ public class Sound {
      public static MediaPlayer pikaaaa;
      public static MediaPlayer gameSound;
      public static MediaPlayer moveSound;
+     public static MediaPlayer coinSound;
 
     public Sound(Context context) {
         moveSound = MediaPlayer.create(context, R.raw.move_sound);
         pikaaaa = MediaPlayer.create(context, R.raw.pikaaaa);
         gameSound = MediaPlayer.create(context, R.raw.game_sound);
+        coinSound = MediaPlayer.create(context, R.raw.coin_sound);
     }
 
     //sound of player injured
-    public static void pikaaaaSound(){
+    public  void pikaaaaSound(){
         pikaaaa.start();
+    }
+
+    public  void coinsSound(){
+        coinSound.start();
     }
 
     //sound of background game music
